@@ -5,7 +5,7 @@ import LanguageIdentifier from "../contract/LanguageIdentifier";
 export const Document_Selector_Markdown: vscode.DocumentSelector = [
   { language: LanguageIdentifier.Markdown, scheme: "file" },
   { language: LanguageIdentifier.Markdown, scheme: "untitled" },
-  { language: LanguageIdentifier.Rmd, scheme: "rmd" },
+  { language: LanguageIdentifier.Rmd, scheme: "file" },
   { language: LanguageIdentifier.Rmd, scheme: "untitled" },
 ];
 
