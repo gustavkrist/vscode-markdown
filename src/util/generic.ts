@@ -3,8 +3,10 @@ import LanguageIdentifier from "../contract/LanguageIdentifier";
 
 /** Scheme `File` or `Untitled` */
 export const Document_Selector_Markdown: vscode.DocumentSelector = [
-    { language: LanguageIdentifier.Markdown, scheme: "file" },
-    { language: LanguageIdentifier.Markdown, scheme: "untitled" },
+  { language: LanguageIdentifier.Markdown, scheme: "file" },
+  { language: LanguageIdentifier.Markdown, scheme: "untitled" },
+  { language: LanguageIdentifier.Rmd, scheme: "rmd" },
+  { language: LanguageIdentifier.Rmd, scheme: "untitled" },
 ];
 
 /**
@@ -18,5 +20,5 @@ export const Document_Selector_Markdown: vscode.DocumentSelector = [
 export const Regexp_Fenced_Code_Block = /^ {0,3}(?<fence>(?<char>[`~])\k<char>{2,})[^`\r\n]*$[^]*?^ {0,3}\k<fence>\k<char>* *$/gm;
 
 export function isMdEditor(editor: vscode.TextEditor | undefined): editor is vscode.TextEditor {
-    return !!(editor && editor.document && editor.document.languageId === LanguageIdentifier.Markdown);
+  return !!(editor && editor.document && (editor.document.languageId === LanguageIdentifier.Markdown || editor.document.languageId === LanguageIdentifier.Rmd));
 }

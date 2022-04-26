@@ -5,10 +5,11 @@
  * @see <https://code.visualstudio.com/docs/languages/identifiers>
  */
 const enum LanguageIdentifier {
-	Html = "html",
-	Json = "json",
-	Markdown = "markdown",
-	PlainText = "plaintext",
+  Html = "html",
+  Json = "json",
+  Markdown = "markdown",
+  PlainText = "plaintext",
+  Rmd = "rmd",
 }
 
 export default LanguageIdentifier;

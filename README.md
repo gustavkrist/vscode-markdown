@@ -8,6 +8,9 @@
 
 All you need for Markdown (keyboard shortcuts, table of contents, auto preview and more).
 
+**Fork of vscode-markdown**
+Enabled extension for R Markdown documents.
+
 ***Note***: VS Code has basic Markdown support out-of-the-box (e.g, **Markdown preview**), please see the [official documentation](https://code.visualstudio.com/docs/languages/markdown) for more information.
 
 **Table of Contents**
