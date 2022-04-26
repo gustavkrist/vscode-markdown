@@ -34,3 +34,9 @@ Then install the downloaded .vsix extension file.
 
 Click extensions in the sidebar, then the three dots in the upper right
 corner of the menu, then install from VSIX and locate the downloaded file.
+
+## Notes
+
+The completion seems to break when R Markdown All In One is enabled
+
+![R Markdown All In One](assets/installation_2022-04-26-22-37-28.png)
