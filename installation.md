@@ -35,6 +35,9 @@ Then install the downloaded .vsix extension file.
 Click extensions in the sidebar, then the three dots in the upper right
 corner of the menu, then install from VSIX and locate the downloaded file.
 
+Or you can open the command pallet and type vsix, and there should be a command to
+install from VSIX.
+
 ## Notes
 
 The completion seems to break when R Markdown All In One is enabled
