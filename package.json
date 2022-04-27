@@ -510,8 +510,7 @@
         "scopeName": "markdown.math_display",
         "path": "./syntaxes/math_display.markdown.tmLanguage.json",
         "injectTo": [
-          "text.html.markdown",
-          "text.html.rmarkdown"
+          "text.html.markdown"
         ]
       },
       {
@@ -519,6 +518,13 @@
         "path": "./syntaxes/math_inline.markdown.tmLanguage.json",
         "injectTo": [
           "text.html.markdown",
+          "text.html.rmarkdown"
+        ]
+      },
+      {
+        "scopeName": "rmarkdown.math_inline",
+        "path": "./syntaxes/math_inline.rmarkdown.tmLanguage.json",
+        "injectTo": [
           "text.html.rmarkdown"
         ]
       },
