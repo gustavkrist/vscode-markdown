@@ -514,11 +514,17 @@
         ]
       },
       {
+        "scopeName": "rmarkdown.math_display",
+        "path": "./syntaxes/math_display.rmarkdown.tmLanguage.json",
+        "injectTo": [
+          "text.html.rmarkdown"
+        ]
+      },
+      {
         "scopeName": "markdown.math_inline",
         "path": "./syntaxes/math_inline.markdown.tmLanguage.json",
         "injectTo": [
-          "text.html.markdown",
-          "text.html.rmarkdown"
+          "text.html.markdown"
         ]
       },
       {

@@ -1,0 +1,57 @@
+{
+  "fileTypes": [],
+  "injectionSelector": "L:(text.html.rmarkdown - meta - comment.block - markup.raw)",
+  "patterns": [
+    {
+      "include": "#math-display"
+    },
+    {
+      "include": "#math-display-brackets"
+    }
+  ],
+  "repository": {
+    "math-display": {
+      "name": "markup.inserted.math.display.markdown",
+      "begin": "(^|\\G)([ ]{0,3})((?<![^\\\\]\\\\)\\$\\$(?!\\$))",
+      "end": "(?<![^\\\\]\\\\)(?<![^\\\\]\\$)(\\$\\$)([\\s]*)",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.math.display.markdown"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.math.display.markdown"
+        }
+      },
+      "contentName": "meta.embedded.block.katex",
+      "patterns": [
+        {
+          "include": "text.katex"
+        }
+      ]
+    },
+    "math-display-brackets": {
+      "name": "markup.inserted.math.display.rmarkdown",
+      "begin": "(^|\\G)([ ]{0,3})((?<![^\\\\]\\\\)\\\\\\[)",
+      "end": "(?<![^\\\\]\\\\)(?<![^\\\\]\\$)(\\\\\\])([\\s]*)",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.math.display.rmarkdown"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.math.display.rmarkdown"
+        }
+      },
+      "contentName": "meta.embedded.block.katex",
+      "patterns": [
+        {
+          "include": "text.katex"
+        }
+      ]
+    }
+  },
+  "scopeName": "rmarkdown.math_display"
+}
