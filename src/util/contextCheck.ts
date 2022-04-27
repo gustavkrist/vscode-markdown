@@ -38,7 +38,7 @@ export function mathEnvCheck(doc: vscode.TextDocument, pos: vscode.Position): "d
     let matches = textBefore.match(/\$\$|\\\[/g);
     if (matches !== null
       && matches.length % 2 !== 0
-      && (textAfter.includes("$$")) || textAfter.includes("\\]")) {
+      && (textAfter.includes("$$") || textAfter.includes("\\]"))) {
       // $$ ... $$
       return "display";
     } else {
