@@ -6,7 +6,6 @@ Provides syntax highlighting and code completion in inline and display
 math blocks.
 Inline math is contained within two `$`, math blocks
 are between two pairs of `$$`.
-Display math blocks must be preceded by an empty line.
 There must be a character immediately after the starting `$` in inline math for
 syntax highlighting to work.
 
